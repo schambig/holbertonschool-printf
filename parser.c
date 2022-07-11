@@ -8,24 +8,24 @@
  **/
 int parser(const char *format, va_list ap)
 {
-        int len, i, aux;
+	int len, i, aux;
 
-        len = 0;
-        for (i = 0; format[i] != 0; i++)
-        {
-                if (format[i] == '%')
-                {
-                        aux = percent_parser(format, ap, &i);
-                        if (aux == -1)
-                                return (-1);
+	len = 0;
+	for (i = 0; format[i] != 0; i++)
+	{
+		if (format[i] == '%')
+		{
+			aux = percent_parser(format, ap, &i);
+			if (aux == -1)
+				return (-1);
 
-                        len += aux;
-                        continue;
-                }
+			len += aux;
+			continue;
+		}
 
-                putchar(format[i]);
-                len = len + 1;
-        }
+		putchar(format[i]);
+		len = len + 1;
+	}
 
-        return (len);
+	return (len);
 }
