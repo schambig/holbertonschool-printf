@@ -1,0 +1,156 @@
+.TH _PRINTF 3 "July 2022" "0.1" "Holberton School C - _printf"
+
+.SH NAME
+.B _printf\fR \- formatted output conversion
+
+.SH SYNOPSIS
+.B #include \fB"main.h"
+
+.B int printf(const char *\fIformat\fB, ...);
+
+.SH DESCRIPTION
+The function \fB_printf()\fR writes output to \fIstdout\fR, the standard
+output. The function writes under the control of a \fIformat\fR string that
+specifies how subsequent arguments (accessed via the variable-length argument
+facilities of stdarg) are converted for output.
+
+.B Return value
+.in +2n
+Upon successful return, \fB_printf()\fR returns the number of characters
+printed (excluding the null byte used to end output to strings).
+
+If an output error is encountered, -1 is returned.
+.in
+
+.B Format of the format string
+.in +2n
+The format string is a constant character string composed of zero or more
+directives: ordinary characters (not \fB%\fR) which are copied unchanged to
+the output stream; and conversion specifications, each of which results in
+fetching zero or more subsequent arguments. Conversion specification is
+introduced by the character \fB%\fR and ends with a \fIconversion specifier\fR.
+.in
+
+.B Conversion Specifiers
+.in +2n
+A character that specifies the type of conversion to be applied. The
+conversion specifiers and their meaning are:
+
+.RS
+.B d, i
+.in +2n
+The \fIint\fR argument is converted to signed decimal notation.
+.in
+.RE
+
+.RS
+.B b
+.in +2n
+The \fIunsigned int\fR argument is converted to binary.
+.in
+.RE
+
+.RS
+.B c
+.in +2n
+The \fIint\fR argument is converted to an \fIunsigned char\fR, and the
+resulting character is written.
+.in
+.RE
+
+.RS
+.B s
+.in +2n
+The \fIconst char *\fR argument is expected to be a pointer to a character
+array (pointer to a string). Characters from the array are written starting
+from the first element of the array and ending at, but not including, the
+terminating null byte ('\\0').
+.in
+.RE
+
+.RS
+.B S
+.in +2n
+Identical to the \fBS\fR conversion specifier, except any non-printable
+characters in the array (ie. characters with an ASCII value < 32 or >= 127)
+are written as \fB\\x\fR followed by the ASCII code value in hexadecimal
+(upper case, two characters).
+.in
+.RE
+
+.RS
+.B r
+.in +2n
+Identical to the \fBs\fR conversion specifier, except characters from the
+array are written in reverse, starting from (but not including) the
+terminating null byte ('\\0') and ending at the first element of the array.
+.in
+.RE
+
+.RS
+.B R
+.in +2n
+Identical to the \fBs\fR conversion specifier, except each character of the
+array is converted to its corresponding character in ROT13 before breing written.
+.in
+.RE
+
+.RS
+.B p
+.in +2n
+The address of the argument is written. The address is written in hexadecimal
+with a leading \fI0x\fR.
+.in
+.RE
+
+.RS
+.B %
+.in +2n
+A '%' is written. No argument is converted. The complete conversion
+specification is '%%'.
+.in
+.RE
+
+.SH EXAMPLE
+To print the next string "HolbertonSchool _printf manpage, 2022", followed by a new line, where \fIschool\fR, \fIproject\fR,
+and \fIfile\fR are pointers to strings and \fIyear\fR is an integer variable.
+
+.RS
+#include "main.h"
+
+/**
+ * main - Entry point
+ * Return: 0 if success
+ */
+
+int main(void)
+
+{
+        char *school = "HolbertonSchool";
+
+        char *project = "_printf";
+
+        char *file = "manpage";
+
+        int year = 2022;
+
+        printf("%s %s %s, %d\\n", school, project, manpage, year);
+
+	return (0);
+}
+.RE
+
+.SH SEE ALSO
+printf(3)
+
+The \fB_printf()\fR function emulates functionality of the C standard library
+function \fBprintf()\fR. This man page borrows from the corresponding Linux
+man page printf(3).
+
+.SH AUTHORS
+.in
+Salomon Chambi
+.in
+.in
+Joel Melgarejo
+.in
