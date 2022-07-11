@@ -13,7 +13,7 @@ int percent_parser(const char *format, va_list ap, int *i)
 
 	t_format formats[] = {
 		{'c', is_char}, {'s', is_string},
-		/*{'d', is_integer}, {'i', is_integer},*/
+		{'d', is_integer}, {'i', is_integer},
 		{'\0', NULL}
 	};
 

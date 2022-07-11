@@ -29,4 +29,7 @@ int is_char(va_list);
 int is_string(va_list);
 int is_integer(va_list);
 
+/* tools */
+char *itoa(long int num, int base);
+
 #endif
