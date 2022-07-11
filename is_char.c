@@ -7,11 +7,11 @@
  */
 int is_char(va_list ap)
 {
-        int aux;
+	int aux;
 
-        aux = va_arg(ap, int);
+	aux = va_arg(ap, int);
 
-        putchar(aux);
+	putchar(aux);
 
-        return (1);
+	return (1);
 }
