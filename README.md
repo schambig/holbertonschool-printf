@@ -16,7 +16,7 @@
 ## Description
 This custom function, which we named _printf(), emulates some of the funtionalities of the builtin C printf() function.
 
-The  function  _printf()  writes  output to the standard output. The function writes under the control of a format string that specifies how subsequent arguments are converted for output.
+The  function  _printf() prints strings to the standard output. The function prints under the control of a format string that specifies how subsequent arguments are converted for output.
 
 Prototype: int _printf(const char *, ...);
 
@@ -87,20 +87,56 @@ $ gcc [your_code] -L. -lprintf -o [outfile_name]
 
 
 **Character**
-* Input: ```_printf("%c is fun!\n", 'C');```
-* Output: ```C is fun!```
+* Input:
+
+```
+_printf("%c is fun!\n", 'C');
+```
+
+* Output:
+
+```
+C is fun!
+```
 
 **String**
-* Input: ```_printf("%s\n", "Read the fucking manual.");```
-* Output: ```Read the fucking manual.```
+* Input:
+
+```
+_printf("%s\n", "Read the fucking manual.");
+```
+
+* Output:
+
+```
+Read the fucking manual.
+```
 
 **Integer or Decimal**
-* Input: ```_printf("Today is July %i.\n", 12);```
-* Output: ```Today is July 12.```
+* Input:
+
+```
+_printf("Today is July %i.\n", 12);
+```
+
+* Output:
+
+```
+Today is July 12.
+```
 
 **Percentage**
-* Input: ```_printf("We've finished the 100%% of the mandatory tasks.\n");```
-* Output: ```We've finished the 100% of the mandatory tasks.```
+* Input:
+
+```
+_printf("We've finished the 100%% of the mandatory tasks.\n");
+```
+
+* Output:
+
+```
+We've finished the 100% of the mandatory tasks.
+```
 
 
 ## Authors
