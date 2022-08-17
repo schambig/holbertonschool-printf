@@ -14,7 +14,7 @@
 - [Authors](#authors)
 
 ## Description
-This custom function, which we named _printf(), emulates some of the funtionalities of the builtin C printf() function.
+This project emulates some of the funtionalities of the builtin C printf() function.
 
 The  function  _printf() prints strings to the standard output. The function prints under the control of a format string that specifies how subsequent arguments are converted for output.
 
