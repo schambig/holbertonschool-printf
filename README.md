@@ -14,9 +14,7 @@
 - [Authors](#authors)
 
 ## Description
-This project emulates some of the funtionalities of the builtin C printf() function.
-
-The  function  _printf() prints strings to the standard output. The function prints under the control of a format string that specifies how subsequent arguments are converted for output.
+"printf" stands for "print formatted" and is one of the main C output functions, it prints a string on the screen using a predefined “format string”, this project emulates some of its functionalities.
 
 Prototype: int _printf(const char *, ...);
 
