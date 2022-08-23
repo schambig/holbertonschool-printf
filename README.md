@@ -38,7 +38,7 @@ Format Specifier | Function name | Description
 ## Installation
 To use this custom _printf function you need `<stdio.h>`, `<stdarg.h>`, `<string.h>` and `<stddef.h>` libraries.
 
-First, clone this repository to your local machine:
+First, clone this repository to your local machine :
 
 ```
 $ git clone https://github.com/schambig/holbertonschool-printf.git
