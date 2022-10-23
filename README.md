@@ -9,7 +9,7 @@
 - [Description](#description)
 - [Format Specifiers](#format-specifiers)
 - [Flowcharts](#flowcharts)
-- [Installation](#Installation)
+- [Installation](#installation)
 - [Examples](#examples)
 - [Authors](#authors)
 
@@ -36,6 +36,7 @@ Format Specifier | Function name | Description
 ![Imgur](https://i.imgur.com/P5g3Mgf.jpg)
 
 ## Installation
+
 To use this custom _printf function you need `<stdio.h>`, `<stdarg.h>`, `<string.h>` and `<stddef.h>` libraries.
 
 First, clone this repository to your local machine :
@@ -138,5 +139,11 @@ We've finished the 100% of the mandatory tasks.
 
 
 ## Authors
-| [<img src="https://avatars.githubusercontent.com/u/105877471?v=4" width=115><br><sub> Joel Melgarejo </sub>](https://github.com/Jmel8) |  [<img src="https://avatars.githubusercontent.com/u/98289735?v=4" width=115><br><sub> Salomón Chambi </sub>](https://github.com/schambig) |
+| [<img src="https://avatars.githubusercontent.com/u/105877471?v=4" width=85><br><sub> Joel Melgarejo </sub>](https://github.com/Jmel8) |  [<img src="https://avatars.githubusercontent.com/u/98289735?v=4" width=85><br><sub> Salomón Chambi </sub>](https://github.com/schambig) |
 | :---: | :---: |
+
+[Back to top](#_printf)<!--@schambig-->
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer"/>
+</p>
